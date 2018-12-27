@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4469878D21D574B300E13CA9 /* AtmInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4469878C21D574B300E13CA9 /* AtmInfo.swift */; };
-		44A885B721D528C10082A37D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A885B621D528C10082A37D /* AppDelegate.swift */; };
-		44A885B921D528C10082A37D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A885B821D528C10082A37D /* FirstViewController.swift */; };
-		44A885BB21D528C10082A37D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A885BA21D528C10082A37D /* SecondViewController.swift */; };
-		44A885BE21D528C10082A37D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A885BC21D528C10082A37D /* Main.storyboard */; };
 		44A885C021D528C20082A37D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A885BF21D528C20082A37D /* Assets.xcassets */; };
-		44A885C321D528C20082A37D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A885C121D528C20082A37D /* LaunchScreen.storyboard */; };
-		44B3C40D21D55218005D94CC /* PBCurrencyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3C40C21D55218005D94CC /* PBCurrencyInfo.swift */; };
+		7C5F7035C8F1DC1CA1243632 /* PBCurrencyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7ECE074BED1C0B651842 /* PBCurrencyInfo.swift */; };
+		7C5F73AC2484EA38F99EADEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5F72BB771E6B51D3D40A7B /* Main.storyboard */; };
+		7C5F747295038AC51275A2CB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7137F8F2BCFE6DD18253 /* FirstViewController.swift */; };
+		7C5F7474489295E37DE5FD56 /* AtmInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7D7A192CDF0D2D054F0A /* AtmInfo.swift */; };
+		7C5F79B9C16F384EDA24353F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F782030E50C81B566890F /* AppDelegate.swift */; };
+		7C5F7C74A2890CD65D2C249C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5F7B7A3A284B19A20914FA /* LaunchScreen.storyboard */; };
+		7C5F7EAA658F0F23F52A145F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F78BA730A2DDC6E308FB3 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4469878C21D574B300E13CA9 /* AtmInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmInfo.swift; sourceTree = "<group>"; };
 		44A885B321D528C10082A37D /* HT-7-PB-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HT-7-PB-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		44A885B621D528C10082A37D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44A885B821D528C10082A37D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		44A885BA21D528C10082A37D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		44A885BD21D528C10082A37D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44A885BF21D528C20082A37D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		44A885C221D528C20082A37D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44A885C421D528C20082A37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44B3C40C21D55218005D94CC /* PBCurrencyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBCurrencyInfo.swift; sourceTree = "<group>"; };
+		7C5F7137F8F2BCFE6DD18253 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		7C5F72BB771E6B51D3D40A7B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7C5F782030E50C81B566890F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C5F78BA730A2DDC6E308FB3 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		7C5F7B7A3A284B19A20914FA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C5F7D7A192CDF0D2D054F0A /* AtmInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtmInfo.swift; sourceTree = "<group>"; };
+		7C5F7ECE074BED1C0B651842 /* PBCurrencyInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCurrencyInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,33 +60,73 @@
 		44A885B521D528C10082A37D /* HT-7-PB-client */ = {
 			isa = PBXGroup;
 			children = (
-				44B3C40A21D551F7005D94CC /* currency */,
-				44A885B621D528C10082A37D /* AppDelegate.swift */,
-				44A885B821D528C10082A37D /* FirstViewController.swift */,
-				44A885BA21D528C10082A37D /* SecondViewController.swift */,
-				44A885BC21D528C10082A37D /* Main.storyboard */,
 				44A885BF21D528C20082A37D /* Assets.xcassets */,
-				44A885C121D528C20082A37D /* LaunchScreen.storyboard */,
 				44A885C421D528C20082A37D /* Info.plist */,
+				7C5F7871885502B1F7026C2D /* Controllers */,
+				7C5F7CC45DCF241D94884C71 /* Models */,
+				7C5F71F451BC66BA45D97F43 /* SupportFiles */,
+				7C5F76D5B20E18F3226C8ACA /* Delegates */,
+				7C5F7CAB373BB0474A6691AF /* Services */,
 			);
 			path = "HT-7-PB-client";
 			sourceTree = "<group>";
 		};
-		44B3C40A21D551F7005D94CC /* currency */ = {
+		7C5F71F451BC66BA45D97F43 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
-				44B3C40B21D55204005D94CC /* model */,
+				7C5F72BB771E6B51D3D40A7B /* Main.storyboard */,
+				7C5F7B7A3A284B19A20914FA /* LaunchScreen.storyboard */,
 			);
-			path = currency;
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
-		44B3C40B21D55204005D94CC /* model */ = {
+		7C5F76D5B20E18F3226C8ACA /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				44B3C40C21D55218005D94CC /* PBCurrencyInfo.swift */,
-				4469878C21D574B300E13CA9 /* AtmInfo.swift */,
+				7C5F782030E50C81B566890F /* AppDelegate.swift */,
 			);
-			path = model;
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		7C5F7865C01BA26AC319B785 /* ATM */ = {
+			isa = PBXGroup;
+			children = (
+				7C5F7137F8F2BCFE6DD18253 /* FirstViewController.swift */,
+			);
+			path = ATM;
+			sourceTree = "<group>";
+		};
+		7C5F7871885502B1F7026C2D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C5F7CCF0B9AE2CC558CE913 /* Currency */,
+				7C5F7865C01BA26AC319B785 /* ATM */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7C5F7CAB373BB0474A6691AF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7C5F7CC45DCF241D94884C71 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C5F7D7A192CDF0D2D054F0A /* AtmInfo.swift */,
+				7C5F7ECE074BED1C0B651842 /* PBCurrencyInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C5F7CCF0B9AE2CC558CE913 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				7C5F78BA730A2DDC6E308FB3 /* SecondViewController.swift */,
+			);
+			path = Currency;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +187,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44A885C321D528C20082A37D /* LaunchScreen.storyboard in Resources */,
 				44A885C021D528C20082A37D /* Assets.xcassets in Resources */,
-				44A885BE21D528C10082A37D /* Main.storyboard in Resources */,
+				7C5F73AC2484EA38F99EADEA /* Main.storyboard in Resources */,
+				7C5F7C74A2890CD65D2C249C /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,34 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44B3C40D21D55218005D94CC /* PBCurrencyInfo.swift in Sources */,
-				44A885BB21D528C10082A37D /* SecondViewController.swift in Sources */,
-				44A885B721D528C10082A37D /* AppDelegate.swift in Sources */,
-				44A885B921D528C10082A37D /* FirstViewController.swift in Sources */,
-				4469878D21D574B300E13CA9 /* AtmInfo.swift in Sources */,
+				7C5F747295038AC51275A2CB /* FirstViewController.swift in Sources */,
+				7C5F7EAA658F0F23F52A145F /* SecondViewController.swift in Sources */,
+				7C5F7474489295E37DE5FD56 /* AtmInfo.swift in Sources */,
+				7C5F7035C8F1DC1CA1243632 /* PBCurrencyInfo.swift in Sources */,
+				7C5F79B9C16F384EDA24353F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		44A885BC21D528C10082A37D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44A885BD21D528C10082A37D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		44A885C121D528C20082A37D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44A885C221D528C20082A37D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		44A885C521D528C20082A37D /* Debug */ = {

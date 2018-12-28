@@ -7,26 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4469879221D5889300E13CA9 /* CurrencyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4469879021D5889300E13CA9 /* CurrencyViewCell.swift */; };
+		4469879321D5889300E13CA9 /* CurrencyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4469879121D5889300E13CA9 /* CurrencyViewCell.xib */; };
+		4469879621D5901B00E13CA9 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4469879521D5901B00E13CA9 /* CurrencyService.swift */; };
+		4469879921D5910A00E13CA9 /* PbApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4469879821D5910A00E13CA9 /* PbApi.swift */; };
 		44A885C021D528C20082A37D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A885BF21D528C20082A37D /* Assets.xcassets */; };
 		7C5F7035C8F1DC1CA1243632 /* PBCurrencyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7ECE074BED1C0B651842 /* PBCurrencyInfo.swift */; };
+		7C5F71C30D22A373E6CDAD27 /* CurrencyViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F78BC53D5B6BFB77BE51D /* CurrencyViewDelegate.swift */; };
 		7C5F73AC2484EA38F99EADEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5F72BB771E6B51D3D40A7B /* Main.storyboard */; };
-		7C5F747295038AC51275A2CB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7137F8F2BCFE6DD18253 /* FirstViewController.swift */; };
 		7C5F7474489295E37DE5FD56 /* AtmInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7D7A192CDF0D2D054F0A /* AtmInfo.swift */; };
+		7C5F7936D3179434F1974B7C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7391A05726CFF9FC6972 /* FirstViewController.swift */; };
 		7C5F79B9C16F384EDA24353F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F782030E50C81B566890F /* AppDelegate.swift */; };
 		7C5F7C74A2890CD65D2C249C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5F7B7A3A284B19A20914FA /* LaunchScreen.storyboard */; };
-		7C5F7EAA658F0F23F52A145F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F78BA730A2DDC6E308FB3 /* SecondViewController.swift */; };
+		7C5F7DAABB5BC9572720F1E9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7DE346ED6F8D51CF1637 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4469879021D5889300E13CA9 /* CurrencyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewCell.swift; sourceTree = "<group>"; };
+		4469879121D5889300E13CA9 /* CurrencyViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyViewCell.xib; sourceTree = "<group>"; };
+		4469879521D5901B00E13CA9 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		4469879821D5910A00E13CA9 /* PbApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PbApi.swift; sourceTree = "<group>"; };
 		44A885B321D528C10082A37D /* HT-7-PB-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HT-7-PB-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A885BF21D528C20082A37D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44A885C421D528C20082A37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C5F7137F8F2BCFE6DD18253 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		7C5F72BB771E6B51D3D40A7B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7C5F7391A05726CFF9FC6972 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		7C5F782030E50C81B566890F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C5F78BA730A2DDC6E308FB3 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		7C5F78BC53D5B6BFB77BE51D /* CurrencyViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyViewDelegate.swift; sourceTree = "<group>"; };
 		7C5F7B7A3A284B19A20914FA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C5F7D7A192CDF0D2D054F0A /* AtmInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtmInfo.swift; sourceTree = "<group>"; };
+		7C5F7DE346ED6F8D51CF1637 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7C5F7ECE074BED1C0B651842 /* PBCurrencyInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCurrencyInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +51,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4469878E21D5879D00E13CA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4469879421D5889900E13CA9 /* ATM */,
+				4469878F21D587A800E13CA9 /* Currency */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4469878F21D587A800E13CA9 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				4469879021D5889300E13CA9 /* CurrencyViewCell.swift */,
+				4469879121D5889300E13CA9 /* CurrencyViewCell.xib */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		4469879421D5889900E13CA9 /* ATM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ATM;
+			sourceTree = "<group>";
+		};
+		4469879721D590DC00E13CA9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4469879821D5910A00E13CA9 /* PbApi.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		44A885AA21D528C10082A37D = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +103,7 @@
 		44A885B521D528C10082A37D /* HT-7-PB-client */ = {
 			isa = PBXGroup;
 			children = (
+				4469878E21D5879D00E13CA9 /* Views */,
 				44A885BF21D528C20082A37D /* Assets.xcassets */,
 				44A885C421D528C20082A37D /* Info.plist */,
 				7C5F7871885502B1F7026C2D /* Controllers */,
@@ -84,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				7C5F782030E50C81B566890F /* AppDelegate.swift */,
+				7C5F78BC53D5B6BFB77BE51D /* CurrencyViewDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -91,7 +136,7 @@
 		7C5F7865C01BA26AC319B785 /* ATM */ = {
 			isa = PBXGroup;
 			children = (
-				7C5F7137F8F2BCFE6DD18253 /* FirstViewController.swift */,
+				7C5F7DE346ED6F8D51CF1637 /* SecondViewController.swift */,
 			);
 			path = ATM;
 			sourceTree = "<group>";
@@ -108,6 +153,8 @@
 		7C5F7CAB373BB0474A6691AF /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4469879721D590DC00E13CA9 /* Network */,
+				4469879521D5901B00E13CA9 /* CurrencyService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -124,7 +171,7 @@
 		7C5F7CCF0B9AE2CC558CE913 /* Currency */ = {
 			isa = PBXGroup;
 			children = (
-				7C5F78BA730A2DDC6E308FB3 /* SecondViewController.swift */,
+				7C5F7391A05726CFF9FC6972 /* FirstViewController.swift */,
 			);
 			path = Currency;
 			sourceTree = "<group>";
@@ -188,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44A885C021D528C20082A37D /* Assets.xcassets in Resources */,
+				4469879321D5889300E13CA9 /* CurrencyViewCell.xib in Resources */,
 				7C5F73AC2484EA38F99EADEA /* Main.storyboard in Resources */,
 				7C5F7C74A2890CD65D2C249C /* LaunchScreen.storyboard in Resources */,
 			);
@@ -200,11 +248,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C5F747295038AC51275A2CB /* FirstViewController.swift in Sources */,
-				7C5F7EAA658F0F23F52A145F /* SecondViewController.swift in Sources */,
+				4469879921D5910A00E13CA9 /* PbApi.swift in Sources */,
 				7C5F7474489295E37DE5FD56 /* AtmInfo.swift in Sources */,
+				4469879221D5889300E13CA9 /* CurrencyViewCell.swift in Sources */,
+				4469879621D5901B00E13CA9 /* CurrencyService.swift in Sources */,
 				7C5F7035C8F1DC1CA1243632 /* PBCurrencyInfo.swift in Sources */,
 				7C5F79B9C16F384EDA24353F /* AppDelegate.swift in Sources */,
+				7C5F7936D3179434F1974B7C /* FirstViewController.swift in Sources */,
+				7C5F7DAABB5BC9572720F1E9 /* SecondViewController.swift in Sources */,
+				7C5F71C30D22A373E6CDAD27 /* CurrencyViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

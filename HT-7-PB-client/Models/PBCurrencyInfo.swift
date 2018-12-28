@@ -20,6 +20,8 @@ public struct PbCurrencyInfo: Codable {
         case ccy
         case sale
     }
+
+
 }
 
 // MARK: -

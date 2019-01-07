@@ -10,9 +10,25 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    //    MARK - private properties
+    @IBOutlet weak var tableView: UITableView!
+    private lazy var dataSource = AtmViewDelegate(tableView: self.tableView)
+    private lazy var atmService: AtmService = AtmServiceImpl()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        tableView.dataSource = dataSource
+        tableView.delegate = dataSource
+        
+        fetchData()
+    }
+    
+    private func fetchData() {
+        let data = atmService.getAtm(city: "", address: "")
+        print(data)
+        dataSource.reload(with: data)
+
     }
 
 

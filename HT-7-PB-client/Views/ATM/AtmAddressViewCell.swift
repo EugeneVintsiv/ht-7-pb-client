@@ -9,16 +9,32 @@
 import UIKit
 
 class AtmAddressViewCell: UITableViewCell {
+    static let reuseIdentifier = "atmAddressViewCell"
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    @IBOutlet weak var cityInfo: UILabel!
+    @IBOutlet weak var placeInfo: UILabel!
+    @IBOutlet weak var addressInfo: UILabel!
     
+    func setup(with model: AtmInfo.Device) {
+        cityInfo.text = model.cityUA
+        placeInfo.text = definePlaceInfo(model)
+        addressInfo.text = model.fullAddressUa
+
+        addressInfo.numberOfLines = 3
+        addressInfo.sizeToFit()
+        addressInfo.adjustsFontSizeToFitWidth = true
+    }
+
+    private func definePlaceInfo(_ model: AtmInfo.Device) -> String {
+        if "Отделение банка" == model.placeRu || "install" == model.placeUa {
+            return "Вiддiлення банку"
+        }
+
+        if model.placeUa != nil {
+            return model.placeUa!
+        }
+        
+        return "Вiддiлення банку"
+    }
+
 }

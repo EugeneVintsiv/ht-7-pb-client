@@ -46,24 +46,6 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXW-H9-gOb">
-                        <rect key="frame" x="8" y="66" width="68" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="21" id="sra-Tv-EuU"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="addressInfo" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISK-5f-Esf">
-                        <rect key="frame" x="84" y="65.5" width="90" height="56"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="56" id="ZP3-DR-KgA"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeInfo" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEC-tp-u2S">
                         <rect key="frame" x="67" y="37" width="70.5" height="20.5"/>
                         <constraints>
@@ -73,31 +55,50 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Address:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXW-H9-gOb">
+                        <rect key="frame" x="8" y="66" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="MYA-KR-opV"/>
+                            <constraint firstAttribute="height" constant="21" id="sra-Tv-EuU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Украiна,область Черкаська,мiсто Черкаси,вулиця Онопрiєнка,будинок 8" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISK-5f-Esf">
+                        <rect key="frame" x="84" y="57.5" width="321" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="ZP3-DR-KgA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
+                <color key="backgroundColor" red="1" green="0.085803620309999995" blue="0.03010971615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="AG7-CT-zlw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="02L-qr-rlJ"/>
                     <constraint firstItem="aXW-H9-gOb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Hjj-8Q-uZG"/>
                     <constraint firstItem="rEC-tp-u2S" firstAttribute="top" secondItem="Hx0-HL-1OB" secondAttribute="bottom" constant="8" id="MPj-lM-3OC"/>
-                    <constraint firstItem="ISK-5f-Esf" firstAttribute="top" secondItem="rEC-tp-u2S" secondAttribute="bottom" constant="8" id="Npx-lG-ue8"/>
+                    <constraint firstItem="ISK-5f-Esf" firstAttribute="top" secondItem="rEC-tp-u2S" secondAttribute="bottom" id="Npx-lG-ue8"/>
                     <constraint firstItem="Hx0-HL-1OB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Qm4-KG-KNq"/>
                     <constraint firstItem="AG7-CT-zlw" firstAttribute="trailing" secondItem="rEC-tp-u2S" secondAttribute="leading" constant="-8" id="Xsy-tl-hLl"/>
                     <constraint firstItem="RQg-3p-p9e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="gCT-ku-9j5"/>
                     <constraint firstItem="aXW-H9-gOb" firstAttribute="top" secondItem="AG7-CT-zlw" secondAttribute="bottom" constant="8" id="kbD-a1-jsp"/>
                     <constraint firstItem="RQg-3p-p9e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="lHh-3S-h8i"/>
+                    <constraint firstAttribute="trailing" secondItem="ISK-5f-Esf" secondAttribute="trailing" constant="16" id="mj9-QW-7Ja"/>
                     <constraint firstItem="AG7-CT-zlw" firstAttribute="top" secondItem="RQg-3p-p9e" secondAttribute="bottom" constant="8" id="pzP-6N-GJZ"/>
                     <constraint firstItem="Hx0-HL-1OB" firstAttribute="leading" secondItem="RQg-3p-p9e" secondAttribute="trailing" constant="8" id="qBY-Nn-tkQ"/>
                     <constraint firstItem="ISK-5f-Esf" firstAttribute="leading" secondItem="aXW-H9-gOb" secondAttribute="trailing" constant="8" id="ziM-WD-gmR"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressInfo" destination="ISK-5f-Esf" id="C0P-gi-Dcb"/>
+                <outlet property="cityInfo" destination="Hx0-HL-1OB" id="LMg-Oj-omG"/>
+                <outlet property="placeInfo" destination="rEC-tp-u2S" id="W9K-hw-3Sh"/>
+            </connections>
             <point key="canvasLocation" x="218.40000000000001" y="199.70014992503749"/>
         </tableViewCell>
-        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P3O-9u-cM2">
-            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-            <nil key="textColor"/>
-            <nil key="highlightedColor"/>
-        </label>
     </objects>
 </document>

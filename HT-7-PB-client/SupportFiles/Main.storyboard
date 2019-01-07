@@ -124,6 +124,9 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="ATM" image="withdrawal" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="tableView" destination="5Fq-WR-X3J" id="nNI-q2-Sns"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

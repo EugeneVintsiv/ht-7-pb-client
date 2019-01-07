@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44626D8E21E2CB0300F4A03C /* AtmAddressViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44626D8C21E2CB0300F4A03C /* AtmAddressViewCell.swift */; };
+		44626D8F21E2CB0300F4A03C /* AtmAddressViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44626D8D21E2CB0300F4A03C /* AtmAddressViewCell.xib */; };
 		4469879221D5889300E13CA9 /* CurrencyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4469879021D5889300E13CA9 /* CurrencyViewCell.swift */; };
 		4469879321D5889300E13CA9 /* CurrencyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4469879121D5889300E13CA9 /* CurrencyViewCell.xib */; };
 		4469879621D5901B00E13CA9 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4469879521D5901B00E13CA9 /* CurrencyService.swift */; };
@@ -20,9 +22,12 @@
 		7C5F79B9C16F384EDA24353F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F782030E50C81B566890F /* AppDelegate.swift */; };
 		7C5F7C74A2890CD65D2C249C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5F7B7A3A284B19A20914FA /* LaunchScreen.storyboard */; };
 		7C5F7DAABB5BC9572720F1E9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7DE346ED6F8D51CF1637 /* SecondViewController.swift */; };
+		7C5F7E9CA63E8FF59452C752 /* AtmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F75E9B3C466EAF24E48D5 /* AtmViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44626D8C21E2CB0300F4A03C /* AtmAddressViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmAddressViewCell.swift; sourceTree = "<group>"; };
+		44626D8D21E2CB0300F4A03C /* AtmAddressViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AtmAddressViewCell.xib; sourceTree = "<group>"; };
 		4469879021D5889300E13CA9 /* CurrencyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewCell.swift; sourceTree = "<group>"; };
 		4469879121D5889300E13CA9 /* CurrencyViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyViewCell.xib; sourceTree = "<group>"; };
 		4469879521D5901B00E13CA9 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 		44A885C421D528C20082A37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C5F72BB771E6B51D3D40A7B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7C5F7391A05726CFF9FC6972 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		7C5F75E9B3C466EAF24E48D5 /* AtmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtmViewController.swift; sourceTree = "<group>"; };
 		7C5F782030E50C81B566890F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C5F78BC53D5B6BFB77BE51D /* CurrencyViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyViewDelegate.swift; sourceTree = "<group>"; };
 		7C5F7B7A3A284B19A20914FA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,6 +78,8 @@
 		4469879421D5889900E13CA9 /* ATM */ = {
 			isa = PBXGroup;
 			children = (
+				44626D8C21E2CB0300F4A03C /* AtmAddressViewCell.swift */,
+				44626D8D21E2CB0300F4A03C /* AtmAddressViewCell.xib */,
 			);
 			path = ATM;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 			children = (
 				7C5F782030E50C81B566890F /* AppDelegate.swift */,
 				7C5F78BC53D5B6BFB77BE51D /* CurrencyViewDelegate.swift */,
+				7C5F75E9B3C466EAF24E48D5 /* AtmViewController.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -235,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44A885C021D528C20082A37D /* Assets.xcassets in Resources */,
+				44626D8F21E2CB0300F4A03C /* AtmAddressViewCell.xib in Resources */,
 				4469879321D5889300E13CA9 /* CurrencyViewCell.xib in Resources */,
 				7C5F73AC2484EA38F99EADEA /* Main.storyboard in Resources */,
 				7C5F7C74A2890CD65D2C249C /* LaunchScreen.storyboard in Resources */,
@@ -256,7 +266,9 @@
 				7C5F79B9C16F384EDA24353F /* AppDelegate.swift in Sources */,
 				7C5F7936D3179434F1974B7C /* FirstViewController.swift in Sources */,
 				7C5F7DAABB5BC9572720F1E9 /* SecondViewController.swift in Sources */,
+				44626D8E21E2CB0300F4A03C /* AtmAddressViewCell.swift in Sources */,
 				7C5F71C30D22A373E6CDAD27 /* CurrencyViewDelegate.swift in Sources */,
+				7C5F7E9CA63E8FF59452C752 /* AtmViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

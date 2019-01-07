@@ -95,6 +95,11 @@ extension AtmInfo {
     static func makeDefault(city requestedCity: String?, address requestedAddress: String?) -> AtmInfo {
         return AtmInfo(city: requestedCity, address: requestedAddress, devices: [])
     }
+
+    static func makeEmptyDefault() -> AtmInfo {
+        return self.makeDefault(city: "", address: "")
+    }
+
     static func create(with data: Data) throws -> AtmInfo  {
         return try JSONDecoder().decode(AtmInfo.self, from: data)
     }

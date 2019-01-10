@@ -23,9 +23,14 @@ class AtmViewDelegate: NSObject {
 
     // MARK: Public methods
 
-    func reload(with model: AtmInfo) {
-        self.model = model
-        tableView.reloadData()
+    func reload(with model: Model) {
+        switch model.self {
+        case is NetworkError:
+            showErrorLabel(message: (model as! NetworkError).message)
+        default:
+            self.model = model as! AtmInfo
+            tableView.reloadData()
+        }
     }
 
     private func showErrorLabel(message: String) {

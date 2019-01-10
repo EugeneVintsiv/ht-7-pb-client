@@ -9,7 +9,6 @@ class CurrencyViewDelegate: NSObject {
 
     private var tableView: UITableView!
     private var models: [PbCurrencyInfo] = []
-//    fileprivate let mediaCellIdentifier = "TableViewCell"
 
     // MARK: Init
 
@@ -22,8 +21,17 @@ class CurrencyViewDelegate: NSObject {
 
     // MARK: Public methods
 
-    func reload(with models: [PbCurrencyInfo]) {
-        self.models = models
+    func reload(with models: [Model]) {
+
+        if (models[0] is NetworkError) {
+            showErrorLabel(message: (models[0] as! NetworkError).message)
+            self.models = []
+            tableView.reloadData()
+            return
+        }
+
+        self.models = models as! [PbCurrencyInfo]
+        tableView.backgroundView = nil
         tableView.reloadData()
     }
 
@@ -54,23 +62,16 @@ extension CurrencyViewDelegate: UITableViewDataSource {
             showErrorLabel(message: "No data")
             return 0
         default:
-            return  models.count
+            return models.count
         }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = models[indexPath.row]
 
-//        switch model.self {
-//        case is NetworkError:
-//            showErrorLabel(message: (model as! NetworkError).message)
-//        default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: CurrencyViewCell.reuseIdentifier) as! CurrencyViewCell
-            cell.setup(with: model  )
-            return cell
-//        }
-
-//        return .init()
+        let cell = tableView.dequeueReusableCell(withIdentifier: CurrencyViewCell.reuseIdentifier) as! CurrencyViewCell
+        cell.setup(with: model)
+        return cell
     }
 }
 

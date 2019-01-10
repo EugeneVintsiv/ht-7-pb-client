@@ -8,12 +8,12 @@
 
 import Foundation
 
-public struct PbCurrencyInfo: Codable {
-    let baseCcy: String
-    let buy: String
-    let ccy: String
-    let sale: String
-    
+public struct PbCurrencyInfo: Codable, Model {
+    var baseCcy: String?
+    var buy: String?
+    var ccy: String?
+    var sale: String?
+
     private enum CodingKeys: String, CodingKey {
         case baseCcy = "base_ccy"
         case buy
@@ -21,17 +21,27 @@ public struct PbCurrencyInfo: Codable {
         case sale
     }
 
-
 }
 
 // MARK: -
 
 extension PbCurrencyInfo {
-    static func create(with data: Data) throws -> PbCurrencyInfo  {
-        return try JSONDecoder().decode(PbCurrencyInfo.self, from: data)
+    static func makeDefault() -> PbCurrencyInfo {
+        return PbCurrencyInfo(baseCcy: "", buy: "", ccy: "", sale: "")
     }
-    
-    static func create(with data: Data) throws -> [PbCurrencyInfo]  {
-            return try JSONDecoder().decode([PbCurrencyInfo].self, from: data)
+
+    static func create(with toParse: Data?) -> [PbCurrencyInfo] {
+        guard let data = toParse else {
+            return [makeDefault()]
+        }
+
+        do {
+            let object = try JSONDecoder().decode([PbCurrencyInfo].self, from: data)
+            return object
+        } catch {
+            print("Decode PbCurrencyInfo failed")
+            return [makeDefault()]
+        }
     }
+
 }

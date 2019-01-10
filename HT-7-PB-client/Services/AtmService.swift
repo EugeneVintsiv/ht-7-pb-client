@@ -6,7 +6,7 @@
 import Foundation
 
 protocol AtmService {
-    func getAtm(city: City, address: Address) -> AtmInfo
+    func getAtm(city: City, address: Address, onReceiveAction: @escaping ((Model) -> ()))
 }
 
 class AtmServiceImpl: AtmService {
@@ -16,7 +16,7 @@ class AtmServiceImpl: AtmService {
         pbApi = PbApi()
     }
 
-    func getAtm(city: City, address: Address) -> AtmInfo {
-        return pbApi.getAtmInfo(cityName: "", address: "")
+    func getAtm(city: City, address: Address, onReceiveAction: @escaping ((Model) -> ())) {
+        pbApi.getAtmInfo(cityName: city, address: address, onReceiveAction: onReceiveAction)
     }
 }

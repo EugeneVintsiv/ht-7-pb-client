@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct AtmInfo: Codable {
+public struct AtmInfo: Codable, Model {
     let city: String?
     let address: String?
     let devices: [Device]?
@@ -74,20 +74,6 @@ public struct AtmInfo: Codable {
 
 }
 
-
-
-// MARK: -
-
-extension AtmInfo.Device.Tw {
-    static func create(with data: Data) throws -> AtmInfo.Device.Tw  {
-        return try JSONDecoder().decode(AtmInfo.Device.Tw.self, from: data)
-    }
-
-    static func create(with data: Data) throws -> [AtmInfo.Device.Tw]  {
-        return try JSONDecoder().decode([AtmInfo.Device.Tw].self, from: data)
-    }
-}
-
 // MARK: -
 
 extension AtmInfo {
@@ -100,13 +86,20 @@ extension AtmInfo {
         return self.makeDefault(city: "", address: "")
     }
 
-    static func create(with data: Data) throws -> AtmInfo  {
-        return try JSONDecoder().decode(AtmInfo.self, from: data)
+    static func create(with data: Data?) -> AtmInfo  {
+        guard let data = data else {
+            return AtmInfo.makeEmptyDefault()
+        }
+
+        do {
+            let object = try JSONDecoder().decode(AtmInfo.self, from: data)
+            return object
+        } catch {
+            print("Decode AtmInfo failed")
+            return AtmInfo.makeEmptyDefault()
+        }
     }
 
-    static func create(with data: Data) throws -> [AtmInfo]  {
-        return try JSONDecoder().decode([AtmInfo].self, from: data)
-    }
 }
 
 // MARK: -
@@ -118,5 +111,18 @@ extension AtmInfo.Device {
 
     static func create(with data: Data) throws -> [AtmInfo.Device]  {
         return try JSONDecoder().decode([AtmInfo.Device].self, from: data)
+    }
+}
+
+
+// MARK: -
+
+extension AtmInfo.Device.Tw {
+    static func create(with data: Data) throws -> AtmInfo.Device.Tw  {
+        return try JSONDecoder().decode(AtmInfo.Device.Tw.self, from: data)
+    }
+
+    static func create(with data: Data) throws -> [AtmInfo.Device.Tw]  {
+        return try JSONDecoder().decode([AtmInfo.Device.Tw].self, from: data)
     }
 }

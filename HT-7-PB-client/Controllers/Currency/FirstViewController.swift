@@ -13,7 +13,7 @@ class FirstViewController: UIViewController {
     //    MARK - private properties
     @IBOutlet weak var tableView: UITableView!
 
-    private lazy var currencyService: CurrencyServiceImpl = CurrencyServiceImpl()
+    private lazy var currencyService: CurrencyService = CurrencyServiceImpl()
     // MARK: Delegate
 
     private lazy var dataSource = CurrencyViewDelegate(tableView: self.tableView)
@@ -29,13 +29,11 @@ class FirstViewController: UIViewController {
     }
 
     private func fetchData() {
-        let data = currencyService.getCurrencies()
-        print(data)
-        dataSource.reload(with: data)
+        currencyService.getCurrencies( onReceiveAction: { (currencies) in
+            print(currencies)
+            self.dataSource.reload(with: currencies)
+        })
 
-//        ItunesSearchNetwork.shared.retrieveAudioContent(type: .music, term: "swift") { [weak self] in
-//            self?.dataSource.reload(with: $0)
-//        }
     }
 
 }

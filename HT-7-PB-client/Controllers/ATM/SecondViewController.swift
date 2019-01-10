@@ -25,9 +25,10 @@ class SecondViewController: UIViewController {
     }
     
     private func fetchData() {
-        let data = atmService.getAtm(city: "", address: "")
-        print(data)
-        dataSource.reload(with: data)
+        atmService.getAtm(city: "cherkasy", address: "Го") { (atmInfo) in
+            print(atmInfo)
+            self.dataSource.reload(with: atmInfo)
+        }
 
     }
 

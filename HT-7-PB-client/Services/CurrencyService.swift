@@ -9,20 +9,18 @@
 import Foundation
 
 protocol CurrencyService {
-    func getCurrencies() -> [PbCurrencyInfo]
+    func getCurrencies(onReceiveAction: @escaping (([Model]) -> ()))
 }
 
 class CurrencyServiceImpl: CurrencyService {
     private let pbApi: PbApi
-    
+
     init() {
         pbApi = PbApi()
     }
-    
-    func getCurrencies() -> [PbCurrencyInfo] {
-        return pbApi.getCurrencies()
+
+    func getCurrencies(onReceiveAction: @escaping (([Model]) -> ())) {
+        pbApi.getCurrencies(onReceiveAction: onReceiveAction)
     }
-    
-    
-    
+
 }

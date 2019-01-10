@@ -13,6 +13,10 @@ class FirstViewController: UIViewController {
     //    MARK - private properties
     @IBOutlet weak var tableView: UITableView!
 
+    @IBAction func refreshButton(_ sender: UIButton) {
+        fetchData()
+    }
+
     private lazy var currencyService: CurrencyService = CurrencyServiceImpl()
     // MARK: Delegate
 

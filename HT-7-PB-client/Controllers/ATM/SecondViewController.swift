@@ -12,6 +12,11 @@ class SecondViewController: UIViewController {
 
     //    MARK - private properties
     @IBOutlet weak var tableView: UITableView!
+
+    @IBAction func refreshButton(_ sender: Any) {
+        fetchData()
+    }
+
     private lazy var dataSource = AtmViewDelegate(tableView: self.tableView)
     private lazy var atmService: AtmService = AtmServiceImpl()
 
@@ -23,7 +28,7 @@ class SecondViewController: UIViewController {
         
         fetchData()
     }
-    
+
     private func fetchData() {
         atmService.getAtm(city: "cherkasy", address: "Го") { (atmInfo) in
             print(atmInfo)

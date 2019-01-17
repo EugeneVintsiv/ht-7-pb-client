@@ -13,7 +13,6 @@ class AtmViewDelegate: NSObject {
     init(tableView: UITableView) {
         self.tableView = tableView
         super.init()
-
         registerCells()
     }
 

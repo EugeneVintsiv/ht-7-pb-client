@@ -10,29 +10,35 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    //    MARK - private properties
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var citiesTextField: UITextField!
+    let citiesPicker = UIPickerView()
 
     @IBAction func refreshButton(_ sender: Any) {
         fetchData()
     }
 
+
     private lazy var dataSource = AtmViewDelegate(tableView: self.tableView)
     private lazy var atmService: AtmService = AtmServiceImpl()
+    private lazy var pickerDataSource: PickerDataSouurce = PickerDataSouurce(citiesTextField: self.citiesTextField)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        citiesTextField.inputView = citiesPicker
+        citiesPicker.delegate = pickerDataSource
+        citiesPicker.dataSource = pickerDataSource
 
         tableView.dataSource = dataSource
         tableView.delegate = dataSource
-        
         fetchData()
     }
 
     private func fetchData() {
-        atmService.getAtm(city: "cherkasy", address: "Го") { (atmInfo) in
-            print(atmInfo)
-            self.dataSource.reload(with: atmInfo)
+        if citiesTextField?.text != "" {
+            atmService.getAtm(city: citiesTextField.text, address: "Го") { (atmInfo) in
+                self.dataSource.reload(with: atmInfo)
+            }
         }
 
     }

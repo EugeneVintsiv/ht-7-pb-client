@@ -34,7 +34,6 @@ class FirstViewController: UIViewController {
 
     private func fetchData() {
         currencyService.getCurrencies( onReceiveAction: { (currencies) in
-            print(currencies)
             self.dataSource.reload(with: currencies)
         })
 

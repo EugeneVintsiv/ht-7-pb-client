@@ -20,6 +20,7 @@
 		7C5F73AC2484EA38F99EADEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5F72BB771E6B51D3D40A7B /* Main.storyboard */; };
 		7C5F7474489295E37DE5FD56 /* AtmInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7D7A192CDF0D2D054F0A /* AtmInfo.swift */; };
 		7C5F76B24715F979D822C003 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F764029318FA2A5EDAA95 /* Model.swift */; };
+		7C5F78AF406CAA166267F805 /* PickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F72C6C2686A4A882324E7 /* PickerDataSource.swift */; };
 		7C5F7936D3179434F1974B7C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7391A05726CFF9FC6972 /* FirstViewController.swift */; };
 		7C5F79B9C16F384EDA24353F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F782030E50C81B566890F /* AppDelegate.swift */; };
 		7C5F7C74A2890CD65D2C249C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5F7B7A3A284B19A20914FA /* LaunchScreen.storyboard */; };
@@ -39,6 +40,7 @@
 		44A885BF21D528C20082A37D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44A885C421D528C20082A37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C5F72BB771E6B51D3D40A7B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7C5F72C6C2686A4A882324E7 /* PickerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerDataSource.swift; sourceTree = "<group>"; };
 		7C5F7391A05726CFF9FC6972 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		7C5F744EC4312C7EBA35FF03 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		7C5F75E9B3C466EAF24E48D5 /* AtmViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtmViewDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				7C5F782030E50C81B566890F /* AppDelegate.swift */,
 				7C5F78BC53D5B6BFB77BE51D /* CurrencyViewDelegate.swift */,
 				7C5F75E9B3C466EAF24E48D5 /* AtmViewDelegate.swift */,
+				7C5F72C6C2686A4A882324E7 /* PickerDataSource.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				7C5F70841593C702D62A0AA8 /* AtmService.swift in Sources */,
 				7C5F76B24715F979D822C003 /* Model.swift in Sources */,
 				7C5F7D138FC201F811E76456 /* NetworkError.swift in Sources */,
+				7C5F78AF406CAA166267F805 /* PickerDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

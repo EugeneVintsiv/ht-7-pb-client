@@ -105,13 +105,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vaX-Yu-7ES" userLabel="viewHeader">
                                 <rect key="frame" x="8" y="28" width="359" height="46"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Atm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bh-wP-F9Y" userLabel="Atm">
-                                        <rect key="frame" x="144" y="8" width="62" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zif-Nx-HME">
                                         <rect key="frame" x="333" y="8" width="18" height="22"/>
                                         <state key="normal" image="reload"/>
@@ -119,6 +112,13 @@
                                             <action selector="refreshButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="U1g-uR-BS4"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Xd-kV-ZhP">
+                                        <rect key="frame" x="8" y="8" width="268" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -157,6 +157,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="ATM" image="withdrawal" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="citiesTextField" destination="4Xd-kV-ZhP" id="9iJ-Td-isN"/>
                         <outlet property="tableView" destination="5Fq-WR-X3J" id="nNI-q2-Sns"/>
                     </connections>
                 </viewController>
